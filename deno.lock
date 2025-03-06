@@ -1,7 +1,6 @@
 {
   "version": "4",
   "specifiers": {
-    "jsr:@fbehrens/youtube-transcript@^1.0.1": "1.0.1",
     "npm:@ai-sdk/openai@^1.2.0": "1.2.0_zod@3.24.2",
     "npm:@ai-sdk/svelte@^1.1.20": "1.1.20_svelte@5.22.3__acorn@8.14.1_zod@3.24.2",
     "npm:@sveltejs/adapter-auto@4": "4.0.0_@sveltejs+kit@2.18.0__@sveltejs+vite-plugin-svelte@5.0.3___svelte@5.22.3____acorn@8.14.1___vite@6.2.0__svelte@5.22.3___acorn@8.14.1__vite@6.2.0_@sveltejs+vite-plugin-svelte@5.0.3__svelte@5.22.3___acorn@8.14.1__vite@6.2.0_svelte@5.22.3__acorn@8.14.1_vite@6.2.0",
@@ -13,11 +12,6 @@
     "npm:typescript@5": "5.8.2",
     "npm:vite@6": "6.2.0",
     "npm:zod@^3.24.2": "3.24.2"
-  },
-  "jsr": {
-    "@fbehrens/youtube-transcript@1.0.1": {
-      "integrity": "1f6031a6c7b723b74dd305fbde19a8450c91a64790d17467d3e1920cb2e1a899"
-    }
   },
   "npm": {
     "@ai-sdk/openai@1.2.0_zod@3.24.2": {
@@ -598,9 +592,6 @@
     }
   },
   "workspace": {
-    "dependencies": [
-      "jsr:@fbehrens/youtube-transcript@^1.0.1"
-    ],
     "packageJson": {
       "dependencies": [
         "npm:@ai-sdk/openai@^1.2.0",

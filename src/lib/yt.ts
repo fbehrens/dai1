@@ -1,4 +1,4 @@
-import { YoutubeTranscript } from "@fbehrens/youtube-transcript";
+import { YoutubeTranscript } from "$lib/vendor/youtube-transcript.ts";
 
 export async function getTranscript({ videoId }: { videoId: string }) {
   const t = await YoutubeTranscript.fetchTranscript(videoId);
