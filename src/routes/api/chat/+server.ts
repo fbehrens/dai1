@@ -1,9 +1,11 @@
 import { z } from "zod";
 import { openai } from "@ai-sdk/openai";
+import { anthropic } from "@ai-sdk/anthropic";
 import { streamText, tool } from "ai";
 import { getTranscript } from "$lib/yt.ts";
 import type { RequestHandler } from "@sveltejs/kit";
-
+// const model = openai("gpt-4o");
+const model = anthropic("claude-3-7-sonnet-20250219");
 const transcript = tool({
   description: "Get the transcript of a video",
   parameters: z.object({
@@ -17,7 +19,7 @@ export const POST = (async ({ request }) => {
   const { messages } = await request.json();
 
   const result = streamText({
-    model: openai("gpt-4o"),
+    model,
     tools: {
       transcript,
     },
