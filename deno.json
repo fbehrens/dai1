@@ -1,0 +1,6 @@
+{
+    "imports": {
+        "$lib/": "./src/lib/",
+        "@fbehrens/youtube-transcript": "jsr:@fbehrens/youtube-transcript@^1.0.1"
+    }
+}
