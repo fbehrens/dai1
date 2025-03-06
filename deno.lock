@@ -1,9 +1,11 @@
 {
   "version": "4",
   "specifiers": {
+    "jsr:@std/path@^1.0.8": "1.0.8",
     "npm:@ai-sdk/anthropic@^1.1.15": "1.1.15_zod@3.24.2",
     "npm:@ai-sdk/openai@^1.2.1": "1.2.1_zod@3.24.2",
     "npm:@ai-sdk/svelte@^1.1.22": "1.1.22_svelte@5.22.5__acorn@8.14.1_zod@3.24.2",
+    "npm:@deno/vite-plugin@^1.0.4": "1.0.4_vite@6.2.0",
     "npm:@sveltejs/adapter-auto@4": "4.0.0_@sveltejs+kit@2.18.0__@sveltejs+vite-plugin-svelte@5.0.3___svelte@5.22.5____acorn@8.14.1___vite@6.2.0__svelte@5.22.5___acorn@8.14.1__vite@6.2.0_@sveltejs+vite-plugin-svelte@5.0.3__svelte@5.22.5___acorn@8.14.1__vite@6.2.0_svelte@5.22.5__acorn@8.14.1_vite@6.2.0",
     "npm:@sveltejs/kit@^2.16.0": "2.18.0_@sveltejs+vite-plugin-svelte@5.0.3__svelte@5.22.5___acorn@8.14.1__vite@6.2.0_svelte@5.22.5__acorn@8.14.1_vite@6.2.0",
     "npm:@sveltejs/vite-plugin-svelte@5": "5.0.3_svelte@5.22.5__acorn@8.14.1_vite@6.2.0",
@@ -13,6 +15,11 @@
     "npm:typescript@5": "5.8.2",
     "npm:vite@6": "6.2.0",
     "npm:zod@^3.24.2": "3.24.2"
+  },
+  "jsr": {
+    "@std/path@1.0.8": {
+      "integrity": "548fa456bb6a04d3c1a1e7477986b6cffbce95102d0bb447c67c4ee70e0364be"
+    }
   },
   "npm": {
     "@ai-sdk/anthropic@1.1.15_zod@3.24.2": {
@@ -79,6 +86,12 @@
       "dependencies": [
         "@jridgewell/gen-mapping",
         "@jridgewell/trace-mapping"
+      ]
+    },
+    "@deno/vite-plugin@1.0.4_vite@6.2.0": {
+      "integrity": "sha512-xg8YT8Wn2sGXSnJgiGTpBGX1Dov0c6fd1rAp8VsfrCUtyBRRWzwVMAnd3fQ4yq8h7LSVvJUxEFN4U421k/DQLA==",
+      "dependencies": [
+        "vite"
       ]
     },
     "@esbuild/aix-ppc64@0.25.0": {
@@ -601,11 +614,15 @@
     }
   },
   "workspace": {
+    "dependencies": [
+      "jsr:@std/path@^1.0.8"
+    ],
     "packageJson": {
       "dependencies": [
         "npm:@ai-sdk/anthropic@^1.1.15",
         "npm:@ai-sdk/openai@^1.2.1",
         "npm:@ai-sdk/svelte@^1.1.22",
+        "npm:@deno/vite-plugin@^1.0.4",
         "npm:@sveltejs/adapter-auto@4",
         "npm:@sveltejs/kit@^2.16.0",
         "npm:@sveltejs/vite-plugin-svelte@5",

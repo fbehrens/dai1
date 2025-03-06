@@ -1,9 +1,11 @@
 import { z } from "zod";
-import { openai } from "@ai-sdk/openai";
+// import { openai } from "@ai-sdk/openai";
 import { anthropic } from "@ai-sdk/anthropic";
 import { streamText, tool } from "ai";
 import { getTranscript } from "$lib/yt.ts";
 import type { RequestHandler } from "@sveltejs/kit";
+import { fromFileUrl } from "@std/path/posix/from-file-url";
+console.log(fromFileUrl("file:///home/foo"));
 // const model = openai("gpt-4o");
 const model = anthropic("claude-3-7-sonnet-20250219");
 const transcript = tool({

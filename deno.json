@@ -1,5 +1,6 @@
 {
     "imports": {
-        "$lib/": "./src/lib/"
+        "$lib/": "./src/lib/",
+        "@std/path": "jsr:@std/path@^1.0.8"
     }
 }
