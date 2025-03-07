@@ -3,6 +3,8 @@
   import Message from "../lib/components/Message.svelte";
   import { Button } from "$lib/components/ui/button/index.js";
   import ChevronRight from "lucide-svelte/icons/chevron-right";
+  import { Input } from "$lib/components/ui/input/index.js";
+
   const { input, handleSubmit, messages } = useChat();
   $input = "Please summarise gUiSSddtqpM";
   $effect(() => {
@@ -15,7 +17,7 @@
     <Message {message} />
   {/each}
   <form onsubmit={handleSubmit}>
-    <input bind:value={$input} />
+    <Input class="max-w-xs" bind:value={$input} />
     <Button variant="outline" size="icon" type="submit">
       <ChevronRight />
     </Button>
