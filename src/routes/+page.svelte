@@ -1,6 +1,8 @@
 <script lang="ts">
   import { useChat } from "@ai-sdk/svelte";
   import Message from "../lib/components/Message.svelte";
+  import { Button } from "$lib/components/ui/button/index.js";
+  import ChevronRight from "lucide-svelte/icons/chevron-right";
   const { input, handleSubmit, messages } = useChat();
   $input = "Please summarise gUiSSddtqpM";
   $effect(() => {
@@ -14,6 +16,8 @@
   {/each}
   <form onsubmit={handleSubmit}>
     <input bind:value={$input} />
-    <button type="submit">Send</button>
+    <Button variant="outline" size="icon" type="submit">
+      <ChevronRight />
+    </Button>
   </form>
 </main>
