@@ -1,6 +1,7 @@
 {
     "imports": {
         "$lib/": "./src/lib/",
+        "@fbehrens/youtube-transcript": "jsr:@fbehrens/youtube-transcript@^1.0.1",
         "@std/path": "jsr:@std/path@^1.0.8"
     },
     "compilerOptions": {
