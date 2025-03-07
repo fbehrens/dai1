@@ -8,11 +8,11 @@
 <b>{message.role}:</b>
 {#each message.parts as part}
   {#if part.type === "text"}
-    <div class="markdown-content">
+    <div class="markdown-content prose prose-slate max-w-none">
       {@html md.render(part.text)}
     </div>
-  {:else if part.type === "tool-invocation"}<b>{part.toolInvocation.toolName}</b
-    >
+  {:else if part.type === "tool-invocation"}
+    <b>{part.toolInvocation.toolName}</b>
     (
     {JSON.stringify(part.toolInvocation.args)}
     )={#if part.toolInvocation.state === "result"}{part.toolInvocation.result
