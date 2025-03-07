@@ -13,9 +13,13 @@
     "npm:@types/markdown-it@^14.1.2": "14.1.2",
     "npm:ai@^4.1.54": "4.1.54_zod@3.24.2",
     "npm:autoprefixer@^10.4.20": "10.4.20_postcss@8.5.3",
+    "npm:clsx@^2.1.1": "2.1.1",
     "npm:markdown-it@^14.1.0": "14.1.0",
     "npm:svelte-check@4": "4.1.4_svelte@5.22.5__acorn@8.14.1_typescript@5.8.2",
     "npm:svelte@^5.22.5": "5.22.5_acorn@8.14.1",
+    "npm:tailwind-merge@^3.0.2": "3.0.2",
+    "npm:tailwind-variants@~0.3.1": "0.3.1_tailwindcss@3.4.17__postcss@8.5.3",
+    "npm:tailwindcss-animate@^1.0.7": "1.0.7_tailwindcss@3.4.17__postcss@8.5.3",
     "npm:tailwindcss@^3.4.9": "3.4.17_postcss@8.5.3",
     "npm:typescript@5": "5.8.2",
     "npm:vite@6": "6.2.0",
@@ -1115,6 +1119,25 @@
         "use-sync-external-store"
       ]
     },
+    "tailwind-merge@2.5.4": {
+      "integrity": "sha512-0q8cfZHMu9nuYP/b5Shb7Y7Sh1B7Nnl5GqNr1U+n2p6+mybvRtayrQ+0042Z5byvTA8ihjlP8Odo8/VnHbZu4Q=="
+    },
+    "tailwind-merge@3.0.2": {
+      "integrity": "sha512-l7z+OYZ7mu3DTqrL88RiKrKIqO3NcpEO8V/Od04bNpvk0kiIFndGEoqfuzvj4yuhRkHKjRkII2z+KS2HfPcSxw=="
+    },
+    "tailwind-variants@0.3.1_tailwindcss@3.4.17__postcss@8.5.3": {
+      "integrity": "sha512-krn67M3FpPwElg4FsZrOQd0U26o7UDH/QOkK8RNaiCCrr052f6YJPBUfNKnPo/s/xRzNPtv1Mldlxsg8Tb46BQ==",
+      "dependencies": [
+        "tailwind-merge@2.5.4",
+        "tailwindcss"
+      ]
+    },
+    "tailwindcss-animate@1.0.7_tailwindcss@3.4.17__postcss@8.5.3": {
+      "integrity": "sha512-bl6mpH3T7I3UFxuvDEXLxy/VuFxBk5bbzplh7tXI68mwMokNYd1t9qPBHlnyTwfa4JGC4zP516I1hYYtQ/vspA==",
+      "dependencies": [
+        "tailwindcss"
+      ]
+    },
     "tailwindcss@3.4.17_postcss@8.5.3": {
       "integrity": "sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==",
       "dependencies": [
@@ -1262,9 +1285,13 @@
         "npm:@types/markdown-it@^14.1.2",
         "npm:ai@^4.1.54",
         "npm:autoprefixer@^10.4.20",
+        "npm:clsx@^2.1.1",
         "npm:markdown-it@^14.1.0",
         "npm:svelte-check@4",
         "npm:svelte@^5.22.5",
+        "npm:tailwind-merge@^3.0.2",
+        "npm:tailwind-variants@~0.3.1",
+        "npm:tailwindcss-animate@^1.0.7",
         "npm:tailwindcss@^3.4.9",
         "npm:typescript@5",
         "npm:vite@6",
