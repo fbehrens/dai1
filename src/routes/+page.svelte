@@ -6,7 +6,7 @@
   import { Input } from "$lib/components/ui/input/index.js";
 
   const { input, handleSubmit, messages } = useChat();
-  $input = "Please summarise gUiSSddtqpM";
+  $input = "Please summarise dQw4w9WgXcQ";
   $effect(() => {
     console.log($messages);
   });
